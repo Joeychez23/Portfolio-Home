@@ -253,7 +253,7 @@ input, select {
     width: 800px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(/Users/joeysanchez/Desktop/TimeLost/bootcamp/ad-css-home/public/images/WcjD8G.jpg);
+    background-image: url(../public/images/WcjD8G.jpg);
     border: solid 10px lightblue;
 }
 
@@ -281,21 +281,21 @@ input, select {
 }
 
 #s-img-1 {
-    background-image: url(/Users/joeysanchez/Desktop/TimeLost/bootcamp/ad-css-home/public/images/download.jpg);
+    background-image: url(../public/images/download.jpg);
 
 }
 
 #s-img-2 {
-    background-image: url(/Users/joeysanchez/Desktop/TimeLost/bootcamp/ad-css-home/public/images/images-1.jpg);
+    background-image: url(../public/images/images-1.jpg);
 }
 
 #s-img-3 {
-    background-image: url(/Users/joeysanchez/Desktop/TimeLost/bootcamp/ad-css-home/public/images/images.jpg);
+    background: url(../public/images/images.jpg);
     
 }
 
 #s-img-4 {
-    background-image: url(/Users/joeysanchez/Desktop/TimeLost/bootcamp/ad-css-home/public/images/download-3.jpg);
+    background-image: url(../public/images/download-3.jpg);
     
 }
 
