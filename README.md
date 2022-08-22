@@ -16,8 +16,8 @@ A picture of the site will be provided bellow:
 
 ## Pages
 
-https://joeychez23.github.io/horiseon-code-refactor/
+https://joeychez23.github.io/portfolio-home/
 
 ## Repo
 
-https://github.com/Joeychez23/horiseon-code-refactor
+https://github.com/Joeychez23/portfolio-home
