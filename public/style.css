@@ -104,6 +104,44 @@ input, select {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*start of the CSS*/
 
 
@@ -176,48 +214,12 @@ input, select {
 /*Left Box*/
 #smallBox {
     grid-column: 1/1;
-    /*border: solid 3px turquoise*/
 }
 
 #smallBox div{
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
-}
-
-#s-t-1 {
-    height: 110px;
-    font-size: 50px;
-    color: grey;
-    border-right: solid 3px purple;
-    margin-bottom: 30px;
-    padding-right: 10px;
-    font-weight: bold;
-    float: right;
-    width: 100%;
-    
-}
-
-#s-t-2 {
-    width: 100%;
-    height: 941px;
-    font-size: 50px;
-    border-right: solid 3px purple;
-    color: grey;
-    margin-bottom: 30px;
-    padding-right: 10px;
-    font-weight: bold;
-}
-#s-t-3 {
-    width: 100%;
-    height: 130px;
-    border-right: solid 3px purple;
-    font-size: 50px;
-    color: grey;
-    padding-right: 10px;
-    font-weight: bold;
-    float: right;
-
 }
 
 
@@ -229,13 +231,20 @@ input, select {
 #bigBox {
     display: block;
     grid-column: 2/2;
-    /*border: solid 3px brown*/
 }
 
 #b-t-1 {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-left: solid 2px lightblue;
+}
+
+#b-t-1 h1 {
+    position: relative;
+    height: 0px;
+    right: 180px;
+    color: grey;
 }
 
 #b-t-1 p{
@@ -249,21 +258,52 @@ input, select {
 
 
 #b-t-2 {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-left: solid 2px lightblue;
+}
+
+#b-t-2 h1 {
+    width: 100%;
+    position: relative;
+    height: 0px;
+    right: 100px;
+    color: grey;
 }
 
 #b-t-2 .colorBox-l {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border: solid 10px lightblue;
+    margin: 20px;
+
+}
+
+#b-t-2 .colorBox-l h2 {
+    position: absolute;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+
+
+#b-t-2 .colorBox-s {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     margin: 20px;
     border: solid 10px lightblue;
 
 }
 
-#b-t-2 .colorBox-s {
-    margin: 20px;
-    border: solid 10px lightblue;
-
+#b-t-2 .colorBox-s h2 {
+    position: absolute;
+    background-color: lightblue;
+    z-index: 1;
+    font-size: 18px;
 }
 
 .large-box{
@@ -272,7 +312,7 @@ input, select {
     align-items: flex-end;
     flex-wrap: wrap;
     height: 400px;
-    width: 800px;
+    width: 820px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../public/images/WcjD8G.jpg);
@@ -284,22 +324,16 @@ input, select {
     opacity: 100%;
 }
 
-.large-box h2 {
-    font-size: 30px;
-    background-color: lightblue;
-}
 
 .small-box {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
-    width: 370px;
-    /*margin: 20px;*/
+    width: 380px;
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
-    /*border: solid 10px lightblue;*/
     opacity: 70%;
     transition: opacity 0.75s;
 }
@@ -310,10 +344,6 @@ input, select {
 }
 
 
-.small-box h2 {
-    font-size: 15px;
-    background-color: lightblue;
-}
 
 #s-img-1 {
     background-image: url(../public/images/download.jpg);
@@ -344,9 +374,19 @@ input, select {
     display: flex;
     justify-content: center;
     height: 80px;
+    flex-wrap: wrap;
     align-items: center;
+    border-left: solid 2px lightblue;
 
     
+}
+
+#b-t-3 h1 {
+    width: 100%;
+    height: 0;
+    position: relative;
+    right: 210px;
+    color: grey;
 }
 
 
@@ -362,53 +402,21 @@ input, select {
 }
 
 
-@media screen and (max-width: 1618px) {
-
-    #s-t-1 {
-        width: 100%;
-        height: 126px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-2 {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-}
 
 @media screen and (max-width: 1337px) {
-    #s-t-1 {
-        width: 100%;
-        height: 150px;
-        margin-bottom: 30px;
-        font-size: 40px;
+
+    .small-box {
+        width: 290px;
     }
 
-    #s-t-2 {
-        width: 100%;
-        margin-bottom: 30px;
-        font-size: 40px;
+    .large-box{
+        width: 660px;
     }
-    #s-t-3 { 
-        font-size: 40px;
-    }
+
 
 }
 
 @media screen and (max-width: 1091px) {
-    #s-t-1 {
-        padding-right: 5px;
-        font-size: 40px;
-    }
-    #s-t-2 {
-        padding-right: 5px;
-        font-size: 40px;
-    }
-    #s-t-3 {
-        padding-right: 5px;
-        font-size: 40px;
-    }
 
     #navBox ul li {
         display: inline;
@@ -424,7 +432,7 @@ input, select {
 }
 
 
-@media screen and (max-width: 1048px) {
+@media screen and (max-width: 1068px) {
     .large-box h2 {
         font-size: 20px;
         background-color: lightblue;
@@ -433,23 +441,6 @@ input, select {
     .small-box h2 {
         font-size: 10px;
         background-color: lightblue;
-    }
-    #s-t-1 {
-        width: 100%;
-        font-size: 30px;
-        height: 174px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-2 {
-        width: 100%;
-        font-size: 30px;
-        height: 740px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-3 {
-        font-size: 30px;
     }
 
     #b-t-3 {
@@ -467,25 +458,24 @@ input, select {
     }
     
     .small-box{
-        width:  260px; 
+        width:  250px; 
         height: 150px;
     }
 }
 
-@media screen and (max-width: 840px) {
-    #s-t-1 {
-        padding-right: 5px;
-        font-size: 25px;
+
+@media screen and (max-width: 900px) {
+    #b-t-1 h1 {
+        right: 150px;
     }
-    #s-t-2 {
-        padding-right: 5px;
-        font-size: 25px;
+    #b-t-2 h1 {
+        right: 100px;
     }
-    #s-t-3 {
-        padding-right: 5px;
-        font-size: 25px;
+    #b-t-3 h1 {
+        right: 190px;
     }
 }
+
 
 @media screen and (max-width: 800px) {
     #navBox h1 {
@@ -502,19 +492,6 @@ input, select {
     #back-img h2 {
         margin-right: 100px;
         background-color: lightblue;
-    }
-
-
-    #s-t-1 {
-        width: 100%;
-        height: 222px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-2 {
-        width: 100%;
-        height: 525px;
-        margin-bottom: 30px;
     }
 
     #b-t-3 {
@@ -562,13 +539,6 @@ input, select {
     }
 }
 
-@media screen and (max-width: 770px) {
-    #s-t-1 {
-        width: 100%;
-        height: 240px;
-        margin-bottom: 30px;
-    }
-}
 
 @media screen and (max-width: 712px) {
     #navBox ul li {
@@ -577,12 +547,31 @@ input, select {
         font-size: 20px;
     }
 
-
-    #s-t-1 {
-        width: 100%;
-        height: 260px;
-        margin-bottom: 30px;
+    #b-t-1 h1 {
+        right: 150px;
     }
+    #b-t-2 h1 {
+        right: 90px;
+    }
+    #b-t-3 h1 {
+        right: 170px;
+    }
+
+
+    #b-t-2 .colorBox-l h2 {
+        position: absolute;
+        background-color: lightblue;
+        z-index: 1;
+        font-size: 18px;
+    }
+
+    #b-t-2 .colorBox-s h2 {
+        position: absolute;
+        background-color: lightblue;
+        z-index: 1;
+        font-size: 9px;
+    }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -597,17 +586,6 @@ input, select {
         background-color: lightblue;
     }
 
-    #s-t-1 {
-        width: 100%;
-        height: 290px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-2 {
-        width: 100%;
-        height: 430px;
-        margin-bottom: 30px;
-    }
     .large-box{
         height: 150px;
         width: 300px;
@@ -642,16 +620,6 @@ input, select {
         margin: 5px;
         font-size: 14px;
     }
-    #s-t-1 {
-        width: 100%;
-        height: 315px;
-        margin-bottom: 30px;
-    }
-    #s-t-2 {
-        width: 100%;
-        height: 410px;
-        margin-bottom: 30px;
-    }
 
     #b-t-3 {
         margin-top: 25px;
@@ -683,23 +651,6 @@ input, select {
     }
 }
 
-@media screen and (max-width: 557px) {
-    #s-t-1 {
-        width: 100%;
-        height: 320px;
-        margin-bottom: 30px;
-        font-size: 25px;
-    }
-    #s-t-2 {
-        height: 405px;
-        padding-right: 5px;
-        font-size: 25px;
-    }
-    #s-t-3 {
-        padding-right: 5px;
-        font-size: 25px;
-    }
-}
 
 @media screen and (max-width: 550px) {
     #navBox ul li {
@@ -727,22 +678,61 @@ input, select {
         background-color: lightblue;
     }
 
-
-    #s-t-1 {
-        width: 100%;
-        height: 360px;
-        margin-bottom: 30px;
+    #b-t-1 h1 {
+        right: 150px;
+    }
+    #b-t-2 h1 {
+        right: 90px;
+    }
+    #b-t-3 h1 {
+        right: 160px;
     }
 
-    #s-t-2 {
-        width: 100%;
-        height: 325px;
-        margin-bottom: 30px;
+
+
+    #b-t-3 {
+        margin-top: 23px;
+        height: 80px;  
     }
 
-    #s-t-3 {
-        width: 100%;
-        height: 120px;
+    #b-t-3 ul li {
+        display: inline;
+        margin: 2px;
+    }
+    
+    #b-t-3 ul li a {
+        color: grey;
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width: 547px) {
+    #navBox ul li {
+        display: inline;
+        margin: 3px;
+        font-size: 12px;
+    }
+    .large-box{
+        height: 100px;
+        width: 200px;
+    }
+
+    .large-box h2 {
+        font-size: 16px;
+        background-color: lightblue;
+    }
+    
+    .small-box{
+        width:  90px; 
+        height: 70px;
+    }
+
+    .small-box h2 {
+        font-size: 8px;
+        background-color: lightblue;
     }
 
 
@@ -776,21 +766,6 @@ input, select {
         width:  90px; 
         height: 70px;
     }
-
-
-    #s-t-1 {
-        width: 100%;
-        height: 390px;
-        margin-bottom: 30px;
-    }
-
-    #s-t-2 {
-        width: 100%;
-        height: 360px;
-        margin-bottom: 30px;
-    }
-
-
 
     #b-t-3 {
         margin-top: 25px;
