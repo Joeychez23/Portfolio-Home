@@ -1,42 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*start of the CSS*/
+/*Header / Links */
 
 
 #navBox {
@@ -75,6 +37,13 @@
 
 
 
+
+
+/* 100% width image box */
+
+
+
+
 #back-img {
     display: flex;
     height: 200px;
@@ -96,6 +65,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Content box <div> for all the site's meat */
+
+
+
+
+
 #content-box {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -105,7 +92,7 @@
 
 
 
-/*Left Box*/
+/* Left Grid Box 1/3 */
 #smallBox {
     grid-column: 1/1;
 }
@@ -121,12 +108,21 @@
 
 
 
-/*Right Box*/
+/* Right Side Grid Box 2/3 */
 #bigBox {
     display: block;
     grid-column: 2/2;
 }
 
+
+
+
+
+
+
+
+
+/* First Box */
 #b-t-1 {
     width: 100%;
     display: flex;
@@ -151,6 +147,14 @@
 
 
 
+
+
+
+
+
+
+
+/* Second Box */
 #b-t-2 {
     margin-top: 30px;
     display: flex;
@@ -158,6 +162,7 @@
     justify-content: center;
     border-left: solid 2px lightblue;
 }
+
 
 #b-t-2 h1 {
     width: 100%;
@@ -167,6 +172,7 @@
     color: grey;
 }
 
+/* Border of the large box */
 #b-t-2 .colorBox-l {
     display: flex;
     justify-content: flex-start;
@@ -183,7 +189,7 @@
 }
 
 
-
+/* Border for the small image boxes */
 #b-t-2 .colorBox-s {
     display: flex;
     justify-content: flex-start;
@@ -200,6 +206,8 @@
     font-size: 18px;
 }
 
+
+/* Large Image */
 .large-box{
     display: flex;
     justify-content: flex-start;
@@ -218,7 +226,7 @@
     opacity: 100%;
 }
 
-
+/* Small Images */
 .small-box {
     display: flex;
     justify-content: flex-start;
@@ -237,7 +245,7 @@
     opacity: 100%;
 }
 
-
+/* Set all the small images */
 
 #s-img-1 {
     background-image: url(../public/images/download.jpg);
@@ -263,6 +271,13 @@
 
 
 
+
+
+
+
+
+
+/* Third Box */
 #b-t-3 {
     margin-top: 30px;
     display: flex;
@@ -297,6 +312,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* All the screen sizing content below: */
 @media screen and (max-width: 1337px) {
 
     .small-box {
