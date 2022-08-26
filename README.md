@@ -2,7 +2,7 @@
 
 ##Description
 
-This is a webpage created to be used as the home page for later project to show employeres of the skills I have developed.
+This is a webpage created to be used as the home page for "later" (I wanna put an enfaces on later because its all sized properly but the content is not for me as of the moment) but it will be when needed for my projects that show employeres of the skills I have developed. 
 
 ## Output
 
